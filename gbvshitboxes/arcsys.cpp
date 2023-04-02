@@ -3,7 +3,7 @@
 
 using StaticClass_t = UClass*(*)();
 const auto AREDGameState_Battle_StaticClass = (StaticClass_t)(
-	sigscan::get().scan("\x00\x00\x48\x8D\x05\xD7\x3F\x9E\xFF", "xxxxxxxxx") - 0x20);
+	sigscan::get().scan("\x00\x00\x48\x8D\x05\x17\x78\x34\x00", "xxxxxxxxx") - 0x20);
 
 using asw_entity_is_active_t = bool(*)(const asw_entity*, bool);
 const auto asw_entity_is_active = (asw_entity_is_active_t)(
